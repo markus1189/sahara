@@ -21,6 +21,10 @@ let g:colors_name="sahara"
 " Highlighting definitions.
 "
 if has("gui_running") || &t_Co == 256
+
+    "
+    " Actual colours and styles.
+    "
     highlight Comment      term=NONE cterm=NONE ctermfg=110  ctermbg=NONE gui=NONE guifg=#87afd7 guibg=NONE
     highlight Constant     term=NONE cterm=NONE ctermfg=217  ctermbg=NONE gui=NONE guifg=#ffafaf guibg=NONE
     highlight Cursor       term=NONE cterm=NONE ctermfg=66   ctermbg=222  gui=NONE guifg=#5f8787 guibg=#ffd787
@@ -52,8 +56,10 @@ if has("gui_running") || &t_Co == 256
     highlight VertSplit    term=NONE cterm=NONE ctermfg=243  ctermbg=237  gui=NONE guifg=#767676 guibg=#3a3a3a
     highlight Visual       term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE guifg=#ffd787 guibg=#5f8700
     highlight WarningMsg   term=NONE cterm=NONE ctermfg=209  ctermbg=NONE gui=NONE guifg=#ff875f guibg=NONE
-    highlight! link htmlTag     Type
-    highlight! link htmlEndTag  htmlTag
+
+    "
+    " General highlighting group links.
+    "
     highlight! link Title       Normal
     highlight! link LineNr      NonText
     highlight! link TabLine     StatusLineNC
@@ -61,5 +67,13 @@ if has("gui_running") || &t_Co == 256
     highlight! link TabLineSel  StatusLine
     highlight! link VertSplit   StatusLineNC
     highlight! link VimHiGroup  VimGroup
+
+    "
+    " Some specific links for things I just like to tweak a bit.
+    "
+    highlight! link htmlTag        Type
+    highlight! link htmlEndTag     htmlTag
+    highlight! link phpVarSelector phpIdentifier
+
 endif
 
