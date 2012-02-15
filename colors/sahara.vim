@@ -33,14 +33,15 @@ if has("gui_running") || &t_Co == 256
     highlight DiffDelete   term=NONE cterm=NONE ctermfg=NONE ctermbg=52   gui=NONE guifg=NONE    guibg=#5f0000
     highlight DiffText     term=NONE cterm=NONE ctermfg=NONE ctermbg=19   gui=NONE guifg=NONE    guibg=#0000af
     highlight FoldColumn   term=NONE cterm=NONE ctermfg=180  ctermbg=237  gui=NONE guifg=#d7af87 guibg=#3a3a3a
-    highlight Folded       term=NONE cterm=NONE ctermfg=220  ctermbg=237  gui=NONE guifg=#ffd700 guibg=#3a3a3a
+    highlight Folded       term=NONE cterm=NONE ctermfg=220  ctermbg=NONE gui=NONE guifg=#ffd700 guibg=#3a3a3a
     highlight Identifier   term=NONE cterm=NONE ctermfg=120  ctermbg=NONE gui=NONE guifg=#87ff87 guibg=NONE
     highlight Ignore       term=NONE cterm=NONE ctermfg=240  ctermbg=NONE gui=NONE guifg=#585858 guibg=NONE
     highlight IncSearch    term=NONE cterm=NONE ctermfg=147  ctermbg=24   gui=NONE guifg=#afafff guibg=#005f87
+    highlight LineNr	   term=NONE cterm=NONE ctermfg=256	 ctermbg=none gui=NONE guifg=#857b6f guibg=#080808
     highlight ModeMsg      term=NONE cterm=NONE ctermfg=178  ctermbg=NONE gui=NONE guifg=#d7af00 guibg=NONE
     highlight MoreMsg      term=NONE cterm=NONE ctermfg=29   ctermbg=NONE gui=NONE guifg=#00875f guibg=NONE
     highlight NonText      term=NONE cterm=NONE ctermfg=237  ctermbg=NONE gui=NONE guifg=#3a3a3a guibg=NONE
-    highlight Normal       term=NONE cterm=NONE ctermfg=251  ctermbg=0    gui=NONE guifg=#c6c6c6 guibg=#000000
+    highlight Normal       term=NONE cterm=NONE ctermfg=251  ctermbg=NONE gui=NONE guifg=#c6c6c6 guibg=#000000
     highlight Pmenu        term=NONE cterm=NONE ctermfg=231  ctermbg=237  gui=NONE guifg=#ffffff guibg=#3a3a3a
     highlight PreProc      term=NONE cterm=NONE ctermfg=167  ctermbg=NONE gui=NONE guifg=#d75f5f guibg=NONE
     highlight Question     term=NONE cterm=NONE ctermfg=48   ctermbg=NONE gui=NONE guifg=#00ff87 guibg=NONE
@@ -61,7 +62,6 @@ if has("gui_running") || &t_Co == 256
     " General highlighting group links.
     "
     highlight! link Title       Normal
-    highlight! link LineNr      NonText
     highlight! link TabLine     StatusLineNC
     highlight! link TabLineFill StatusLineNC
     highlight! link TabLineSel  StatusLine
@@ -76,4 +76,3 @@ if has("gui_running") || &t_Co == 256
     highlight! link phpVarSelector phpIdentifier
 
 endif
-
