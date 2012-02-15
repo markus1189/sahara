@@ -51,11 +51,11 @@ if has("gui_running") || &t_Co == 256
     highlight Statement    term=NONE cterm=NONE ctermfg=222  ctermbg=NONE gui=NONE guifg=#ffd787 guibg=NONE
     highlight StatusLine   term=NONE cterm=NONE ctermfg=231  ctermbg=237  gui=NONE guifg=#ffffff guibg=#3a3a3a
     highlight StatusLineNC term=NONE cterm=NONE ctermfg=16   ctermbg=237  gui=NONE guifg=#000000 guibg=#3a3a3a
-    highlight Todo         term=NONE cterm=NONE ctermfg=196  ctermbg=226  gui=NONE guifg=#ff0000 guibg=#ffff00
+    highlight Todo         term=NONE cterm=bold ctermfg=124  ctermbg=NONE gui=NONE guifg=#ff0000 guibg=#ffff00
     highlight Type         term=NONE cterm=NONE ctermfg=143  ctermbg=NONE gui=NONE guifg=#afaf5f guibg=NONE
     highlight Underlined   term=NONE cterm=NONE ctermfg=81   ctermbg=NONE gui=NONE guifg=#5fd7ff guibg=NONE
     highlight VertSplit    term=NONE cterm=NONE ctermfg=243  ctermbg=237  gui=NONE guifg=#767676 guibg=#3a3a3a
-    highlight Visual       term=NONE cterm=NONE ctermfg=222  ctermbg=0   gui=NONE guifg=#ffd787 guibg=#5f8700
+    highlight Visual       term=NONE cterm=NONE ctermfg=222  ctermbg=0    gui=NONE guifg=#ffd787 guibg=#5f8700
     highlight WarningMsg   term=NONE cterm=NONE ctermfg=209  ctermbg=NONE gui=NONE guifg=#ff875f guibg=NONE
 
     "
