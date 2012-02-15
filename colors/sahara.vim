@@ -55,7 +55,7 @@ if has("gui_running") || &t_Co == 256
     highlight Type         term=NONE cterm=NONE ctermfg=143  ctermbg=NONE gui=NONE guifg=#afaf5f guibg=NONE
     highlight Underlined   term=NONE cterm=NONE ctermfg=81   ctermbg=NONE gui=NONE guifg=#5fd7ff guibg=NONE
     highlight VertSplit    term=NONE cterm=NONE ctermfg=243  ctermbg=237  gui=NONE guifg=#767676 guibg=#3a3a3a
-    highlight Visual       term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE guifg=#ffd787 guibg=#5f8700
+    highlight Visual       term=NONE cterm=NONE ctermfg=222  ctermbg=0   gui=NONE guifg=#ffd787 guibg=#5f8700
     highlight WarningMsg   term=NONE cterm=NONE ctermfg=209  ctermbg=NONE gui=NONE guifg=#ff875f guibg=NONE
 
     "
