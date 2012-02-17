@@ -79,4 +79,10 @@ if has("gui_running") || &t_Co == 256
     highlight! link htmlEndTag     htmlTag
     highlight! link phpVarSelector phpIdentifier
 
+    highlight User1 term=inverse,bold cterm=inverse,bold ctermfg=124
+                \               ctermbg=NONE guibg=red guifg=black gui=bold
+    highlight User2 term=inverse,bold cterm=inverse,bold ctermfg=white
+                \               ctermbg=NONE guibg=white guifg=black gui=bold
+    highlight User3 term=inverse,bold cterm=inverse,bold ctermfg=lightgreen
+
 endif
